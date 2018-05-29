@@ -1,8 +1,23 @@
-.center{
+.center {
     margin-left: 40%;
     margin-top: 25%;
-
 }
-body{
-background-color: lightblue;
+
+body {
+    background-color: lightblue;
+}
+
+.tabs {}
+
+.tab {
+    width: 20%;
+    display: inline-block;
+    background-color: steelblue;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+
 }
