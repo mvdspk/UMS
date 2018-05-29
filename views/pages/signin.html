@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../style/signin.css">
+    <script src="../js/userinputvalidations.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="center" id="signinwrap">
+            <h1>Sign In</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">User Name or Email</label>
+                    </td>
+                    <td>
+                        <input name="username" type="text" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password</label>
+                    </td>
+                    <td>
+                        <input name="pwd" type="password" id="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" onclick="signin('username','pwd')">Sign In</button>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="errormsg"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="center" id="regwrap">
+            <h1>Register</h1>
+            <div id="usernamewrap">
+                <label for="username">User Name</label>
+                <input name="username" type="text" id="username">
+            </div>
+            <div id="emailwrap">
+                <label for="email">User Name</label>
+                <input name="email" type="password" id="email">
+            </div>
+            <div id="pwdwrap">
+                <label for="pwd">Password</label>
+                <input name="pwd" type="password" id="pwd">
+            </div>
+            <div id="submitwrap">
+                <button type="submit">Sign In</button>
+            </div>
+            <div id="errorwrap">
+                <div id="errormsg"></div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
