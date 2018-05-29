@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: lightgray;
 }
 
 .tabs {}
@@ -19,5 +19,13 @@ body {
     text-align: center;
     color: white;
     font-size: xx-large;
+}
+.submit{
+    color: white;
+    background-color: navy;
+    padding:10px;
+    margin-left: 50%;
+    align-self: center;
+    font-size:larger;
 
 }
