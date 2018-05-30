@@ -1,10 +1,12 @@
-from flask import Flask
+from flask import Flask, request, send_from_directory
+import os
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return 'Welcome to UMS'
+    path=os.path.join(os.getcwd(),'views','pages')
+    return send_from_directory(path, 'signin.html')
 
 
 if __name__ == "__main__":
