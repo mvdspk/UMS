@@ -23,6 +23,24 @@
             document.getElementById('regwrap').style = "display";
 
         }
+
+function register(){
+var user = {
+            username: document.getElementById('uname').value,
+            password:document.getElementById('passwd').value,
+            email:document.getElementById('mail').value
+        }
+
+        $.ajax({
+            url: 'http://localhost:5000/register',
+            type: 'post',
+            dataType: 'json',
+            success: function (data) {
+                alert(data.msg);
+            },
+            data: user
+        });
+}
     </script>
 </head>
 
@@ -67,27 +85,27 @@
                 <table>
                     <tr>
                         <td>
-                            <label for="username">User Name</label>
+                            <label for="uname">User Name</label>
                         </td>
                         <td>
-                            <input name="username" type="text" id="username">
+                            <input name="username" type="text" id="uname">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="email">Email</label>
+                            <label for="mail">Email</label>
                         </td>
                         <td>
-                            <input name="email" type="text" id="email">
+                            <input name="email" type="text" id="mail">
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <label for="pwd">Password</label>
+                            <label for="passwd">Password</label>
                         </td>
                         <td>
-                            <input name="pwd" type="password" id="pwd">
+                            <input name="pwd" type="password" id="passwd">
                         </td>
                     </tr>
                     <tr>
@@ -100,7 +118,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button class="submit" type="submit">Register</button>
+                            <button class="submit" type="submit" onclick="register()">Register</button>
                         </td>
 
                     </tr>

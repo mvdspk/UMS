@@ -5,6 +5,7 @@ function validateEmail() {
 function isPwdMatch() {
 
 }
+
 function signin(username,pwd){
 
     //debug
